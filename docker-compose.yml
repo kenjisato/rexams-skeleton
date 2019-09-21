@@ -5,8 +5,11 @@ services:
     image: kenjis/rexams:latest
     volumes:
       - type: bind
-        source: ~/Courses/Problems/macro
-        target: /home/rstudio/exams/problems
+        source: ./exams
+        target: /home/rstudio/exams
+      - type: bind
+        source: ~/Documents/Sandbox/Problems/macro
+        target: /home/rstudio/problems
       - type: bind
         source: ./students.csv
         target: /home/rstudio/students.csv
