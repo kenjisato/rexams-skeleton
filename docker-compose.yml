@@ -2,11 +2,10 @@ version: "3.6"
 
 services:
   rexams:
-    build: ~/Dropbox/Docker/rexams
-    image: rexams:0.0.1.9006
+    image: kenjis/rexams:latest
     volumes:
       - type: bind
-        source: ~/Documents/Sandbox/Problems/macro
+        source: ~/Courses/Problems/macro
         target: /home/rstudio/exams/problems
       - type: bind
         source: ./students.csv
