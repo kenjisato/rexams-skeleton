@@ -3,7 +3,7 @@ reglength: 10     # 学籍番号の桁数
 
 problems_dir: problems
 nops_dir: nops
-logo: ../logo.jpg
-students_list: ../students.csv
+logo: ../../logo.jpg
+students_list: ../../students.csv
 
 language: ja

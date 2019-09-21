@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+  rexams:
+    build: ~/Dropbox/Docker/rexams
+    image: rexams:0.0.1.9006
+    volumes:
+      - type: bind
+        source: ~/Documents/Sandbox/Problems/macro
+        target: /home/rstudio/exams/problems
+      - type: bind
+        source: ./students.csv
+        target: /home/rstudio/students.csv
+    ports:
+      - 8787:8787
+    environment:
+      PASSWORD: tomato
