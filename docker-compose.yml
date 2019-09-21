@@ -13,6 +13,9 @@ services:
       - type: bind
         source: ./students.csv
         target: /home/rstudio/students.csv
+      - type: bind
+        source: ./course.yml
+        target: /home/rstudio/course.yml
     ports:
       - 8787:8787
     environment:

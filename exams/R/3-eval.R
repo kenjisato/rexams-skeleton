@@ -1,7 +1,7 @@
 library("exams")
 
 ## ---- 全体設定は course.yml に書く ----
-y <- yaml::read_yaml("course.yml")
+y <- yaml::read_yaml("../course.yml")
 
 ## ------ 小テストごとにここを変更 -------
 
@@ -19,4 +19,3 @@ ev <- nops_eval(
   eval = exams_eval(partial = FALSE, negative = FALSE),
   interactive = FALSE
 )
-
