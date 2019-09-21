@@ -1,0 +1,9 @@
+course: "マクロ経済学入門"  # 科目名
+reglength: 10     # 学籍番号の桁数
+
+problems_dir: problems
+nops_dir: nops
+logo: ../logo.jpg
+students_list: ../students.csv
+
+language: ja
